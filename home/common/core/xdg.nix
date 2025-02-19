@@ -4,7 +4,7 @@
   ...
 }: let
   # FIXME(xdg): That should use config options and just reference whatever is configured as the default
-  browser = ["firefox.desktop"];
+  browser = ["librewolf.desktop"];
   editor = ["nvim.desktop"];
   media = ["vlc.desktop"];
   writer = ["libreoffice-writer.desktop"];
@@ -133,9 +133,9 @@ in {
       createDirectories = true;
       documents = "${config.home.homeDirectory}/documents";
       download = "${config.home.homeDirectory}/downloads";
-      music = "${config.home.homeDirectory}/media/audio";
-      pictures = "${config.home.homeDirectory}/media/images";
-      videos = "${config.home.homeDirectory}/media/video";
+      music = "${config.home.homeDirectory}/audio";
+      pictures = "${config.home.homeDirectory}/images";
+      videos = "${config.home.homeDirectory}/video";
       extraConfig = {
         # publicshare and templates defined as null here instead of as options because
         XDG_PUBLICSHARE_DIR = "/var/empty";
