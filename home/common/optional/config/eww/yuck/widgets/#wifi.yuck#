@@ -1,0 +1,7 @@
+
+(defwidget wifi []
+  (box
+    (label
+     :tooltip wifi_name
+     :text wifi_icon
+     :class wifi_class )))

@@ -1,0 +1,165 @@
+{
+  "nodes": {
+    "hyprlang": {
+      "inputs": {
+        "nixpkgs": [
+          "rose-pine-hyprcursor",
+          "nixpkgs"
+        ],
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1709914708,
+        "narHash": "sha256-bR4o3mynoTa1Wi4ZTjbnsZ6iqVcPGriXp56bZh5UFTk=",
+        "owner": "hyprwm",
+        "repo": "hyprlang",
+        "rev": "a685493fdbeec01ca8ccdf1f3655c044a8ce2fe2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hyprwm",
+        "repo": "hyprlang",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "rose-pine-hyprcursor": "rose-pine-hyprcursor",
+        "stable": [
+          "vars",
+          "stable"
+        ],
+        "stable-home": [
+          "vars",
+          "stable-home"
+        ],
+        "vars": "vars"
+      }
+    },
+    "rose-pine-hyprcursor": {
+      "inputs": {
+        "hyprlang": "hyprlang",
+        "nixpkgs": [
+          "stable"
+        ],
+        "utils": "utils"
+      },
+      "locked": {
+        "lastModified": 1733265112,
+        "narHash": "sha256-FdO+2X7TeIAW73hiyFKZbCjlAskb4xMmYYPX97mo9RE=",
+        "owner": "ndom91",
+        "repo": "rose-pine-hyprcursor",
+        "rev": "89dc9e347ce8da26766ad421b0899536f9f87639",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ndom91",
+        "repo": "rose-pine-hyprcursor",
+        "type": "github"
+      }
+    },
+    "stable": {
+      "locked": {
+        "lastModified": 1738843498,
+        "narHash": "sha256-7x+Q4xgFj9UxZZO9aUDCR8h4vyYut4zPUvfj3i+jBHE=",
+        "rev": "f5a32fa27df91dfc4b762671a0e0a859a8a0058f",
+        "revCount": 714127,
+        "type": "tarball",
+        "url": "https://api.flakehub.com/f/pinned/NixOS/nixpkgs/0.2411.714127%2Brev-f5a32fa27df91dfc4b762671a0e0a859a8a0058f/0194df5d-2dc2-7975-9cf5-e7da2b1eaffe/source.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://flakehub.com/f/NixOS/nixpkgs/0.2411.714033.tar.gz"
+      }
+    },
+    "stable-home": {
+      "inputs": {
+        "nixpkgs": [
+          "vars",
+          "stable"
+        ]
+      },
+      "locked": {
+        "lastModified": 1736373539,
+        "narHash": "sha256-dinzAqCjenWDxuy+MqUQq0I4zUSfaCvN9rzuCmgMZJY=",
+        "rev": "bd65bc3cde04c16755955630b344bc9e35272c56",
+        "revCount": 3879,
+        "type": "tarball",
+        "url": "https://api.flakehub.com/f/pinned/nix-community/home-manager/0.2411.3879%2Brev-bd65bc3cde04c16755955630b344bc9e35272c56/01944991-39a8-73a3-bec5-74a0d91110b0/source.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://flakehub.com/f/nix-community/home-manager/0.2411.3879.tar.gz"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1689347949,
+        "narHash": "sha256-12tWmuL2zgBgZkdoB6qXZsgJEH9LR3oUgpaQq2RbI80=",
+        "owner": "nix-systems",
+        "repo": "default-linux",
+        "rev": "31732fcf5e8fea42e59c2488ad31a0e651500f68",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default-linux",
+        "type": "github"
+      }
+    },
+    "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "utils": {
+      "inputs": {
+        "systems": "systems_2"
+      },
+      "locked": {
+        "lastModified": 1710146030,
+        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "vars": {
+      "inputs": {
+        "stable": "stable",
+        "stable-home": "stable-home"
+      },
+      "locked": {
+        "lastModified": 1739115378,
+        "narHash": "sha256-LO3Q1ZfQq896gLOyxoud2bdCUHgYwAQZFRE610mNiU0=",
+        "owner": "nooh-m",
+        "repo": "variables",
+        "rev": "b4b80f8b243196a18687f1fae4c64fc17e3be8fa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nooh-m",
+        "repo": "variables",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
